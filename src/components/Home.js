@@ -12,7 +12,12 @@ export default class Home extends React.Component {
             <Link to="/userProfile">User Profile</Link>
             {/* <a href="/userProfile">User Profile</a> */}
 
-            <AccountBalance accountBalance={this.props.accountBalance} />
+            <AccountBalance
+                accountBalance={this.props.accountBalance}
+                getBalance={this.props.getBalance} />
+
+            <Link to="/debits">Debits</Link>
+            <Link to="/credits">Credits</Link>
         </div>)
     }
 }

@@ -5,7 +5,7 @@ export default class AccountBalance extends React.Component {
     render() {
         return (
             <div>
-                Balance: {this.props.accountBalance}
+                Balance: {this.props.getBalance()}
             </div>
         )
     }
